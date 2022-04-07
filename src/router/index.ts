@@ -1,12 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import home from '../pages/home.vue'
+
+export default[
+    {path: '/', component: home},
+    
+]
 
 
-Vue.use(VueRouter)
-
-const router = new VueRouter({
- 
-  
-})
-
-export default router
