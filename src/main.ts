@@ -14,6 +14,7 @@ Vue.use(VueResource)
 Vue.use(VueRouter)
 
 const router = new VueRouter({
+  mode: 'history',
   routes : Routes
 })
 
@@ -30,3 +31,7 @@ const app = createApp({
 app.use(PiniaVuePlugin)
 
 app.mount('#app')
+function createWebHistory() {
+  throw new Error('Function not implemented.')
+}
+
