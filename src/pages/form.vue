@@ -1,18 +1,5 @@
-<script lang="ts">
-  export default {
-    data() {
-      return {
-        formname: '',
-      }
-    },
-    methods: {
-      submit() {
+<script lang="ts" setup>
 
-        console.log(this.formname);
-
-      }
-    }
-  }
 </script>
 <template>
   <div class="ma-md-16 ma-5">
@@ -20,19 +7,19 @@
       <v-form class="pa-4 px-md-14">
         <v-row>
           <v-col md="6" sm="12" cols="12">
-            <v-text-field label="نام" v-model="formname" prepend-icon="mdi-account"></v-text-field>
+            <v-text-field label="نام"  prepend-icon="mdi-account"></v-text-field>
           </v-col>
           <v-col md="6" xs="12" sm="12" cols="12">
-            <v-text-field label="نام خانوادگی" v-model="formfamily" prepend-icon="mdi-account"></v-text-field>
+            <v-text-field label="نام خانوادگی"  prepend-icon="mdi-account"></v-text-field>
           </v-col>
           <v-col md="6" sm="12" cols="12">
-            <v-text-field label="تعداد نفرات" v-model="formnumber" prepend-icon="mdi-account-multiple"></v-text-field>
+            <v-text-field label="تعداد نفرات" prepend-icon="mdi-account-multiple"></v-text-field>
           </v-col>
         </v-row>
 
         <v-row>
           <v-col>
-            <v-radio-group v-model="formtrancfer" row>
+            <v-radio-group  row>
               <label class="pr-5"> نوع وسیله سفر </label>
               <v-radio label="قطار" value="radio-1"></v-radio>
               <v-radio label="اتوبوس" value="radio-2"></v-radio>
@@ -42,11 +29,11 @@
         </v-row>
         <v-row>
           <v-col md="6" sm="12" cols="12">
-            <v-text-field label="نام سازمان محل خدمت " v-model="formarea" prepend-icon="mdi-account-multiple">
+            <v-text-field label="نام سازمان محل خدمت "  prepend-icon="mdi-account-multiple">
             </v-text-field>
           </v-col>
           <v-col md="6" sm="12" cols="12">
-            <v-text-field label="شماره موبایل" v-model="formnumber" prepend-icon="mdi-cellphone"></v-text-field>
+            <v-text-field label="شماره موبایل"  prepend-icon="mdi-cellphone"></v-text-field>
           </v-col>
         </v-row>
         <v-row>
@@ -56,7 +43,7 @@
         </v-row>
         <v-row>
           <v-btn  class="my-4 mr-12 deep-purple accent-4" dense
-      dark @click="submit" width="150px">ارسال </v-btn>
+      dark @click="" width="150px">ارسال </v-btn>
         </v-row>
 
 

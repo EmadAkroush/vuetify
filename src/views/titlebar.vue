@@ -1,17 +1,24 @@
 <script setup lang="ts">
-
+import { ref } from 'vue-demi';
+var drawer = ref(false)
 
 </script>
 
 <template>
    <div>
+     <v-navigation-drawer  v-model="drawer" app class="indigo"
+     right
+     >
+       
+    </v-navigation-drawer>
     <v-app-bar
      
       color="deep-purple accent-4"
       dense
       dark
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+    
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title> قاره پیما آسیا </v-toolbar-title>
 

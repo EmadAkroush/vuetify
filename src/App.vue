@@ -12,8 +12,8 @@ import  useRouter   from 'vue-router';
 
   </titlebar>
 <router-view></router-view>
-  
-
+    
+   
 
   </v-main>
 
