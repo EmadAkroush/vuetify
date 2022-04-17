@@ -121,9 +121,18 @@
 ></v-divider>
 <v-row>
   <v-col>
-    <v-icon></v-icon>
+   <font-awesome-icon icon="fa-brands fa-instagram" />
   </v-col>
-  
+   <v-col>
+    <font-awesome-icon icon="fa-brands fa-telegram" />
+  </v-col>
+  <v-col>
+    <font-awesome-icon icon="fab fa-whatsapp" />
+  </v-col>
+  <v-col>
+    <font-awesome-icon icon="fa-brands fa-youtube" /> 
+    
+  </v-col>
 
 </v-row>
 </v-footer>

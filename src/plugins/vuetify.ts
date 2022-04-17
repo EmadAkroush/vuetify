@@ -5,7 +5,10 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import '@mdi/font/css/materialdesignicons.css' // Ensure you are using css-loader
 
-Vue.use(Vuetify)
+Vue.use(Vuetify , {
+   primary: '#6200EA',
+
+})
 
 const opts = {}
 

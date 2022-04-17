@@ -59,7 +59,7 @@
 
                         <router-link class="link" to="/form">
                             <v-btn color="deep-purple lighten-2" text @click="">
-                                رزرو
+                                درخواست رزرو
                             </v-btn>
                         </router-link>
                     </v-card-actions>
@@ -110,7 +110,7 @@
                     <v-card-actions>
                         <router-link class="link" to="/form">
                             <v-btn color="deep-purple lighten-2" text @click="">
-                                رزرو
+                                درخواست رزرو
                             </v-btn>
                         </router-link>
                     </v-card-actions>
@@ -163,7 +163,7 @@
                     <v-card-actions>
                           <router-link class="link" to="/form">
                             <v-btn color="deep-purple lighten-2" text @click="">
-                           رزرو
+                           درخواست رزرو 
                            </v-btn>
                         </router-link>
                     </v-card-actions>

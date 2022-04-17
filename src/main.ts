@@ -6,7 +6,24 @@ import App from './App.vue'
 import vuetify from '../src/plugins/vuetify' // path to vuetify export
 import VueRouter from 'vue-router'
 import Routes from '../src/router/index'
+import { library } from '@fortawesome/fontawesome-svg-core'
 
+/* import specific icons */
+import { faBox } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faTelegram } from '@fortawesome/free-brands-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
+library.add(faInstagram,faTelegram,faWhatsapp,faYoutube)
+
+/* add font awesome icon component */
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+Vue.config.productionTip = false
 
 
 Vue.use(VueCompositionAPI)

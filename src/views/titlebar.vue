@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue-demi';
+import signinpopup from '../views/signinpopup.vue';
 var drawer = ref(false)
 
 </script>
@@ -13,7 +14,7 @@ var drawer = ref(false)
     </v-navigation-drawer>
     <v-app-bar
      
-      color="deep-purple accent-4"
+      color="primary"
       dense
       dark
     >
@@ -24,14 +25,14 @@ var drawer = ref(false)
 
       <v-spacer></v-spacer>
 
+  
+      <signinpopup></signinpopup>
       <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
 
-      <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
-      </v-btn>
 
+      </v-btn>
+     
       <v-menu
         left
         bottom
